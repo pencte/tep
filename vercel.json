@@ -1,17 +1,8 @@
 {
-  "builds": [
-    {
-      "src": "src/index.ts",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": "**/*.ts"
-      }
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/src/index.ts"
+      "destination": "/"
     }
   ]
 }
